@@ -4,8 +4,6 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-/*
 const temp_number = 5;
 let text = "5?";
 if(temp_number > 5){
@@ -13,13 +11,16 @@ if(temp_number > 5){
 } else {
   text = "under or equal 5";
 }
-  
+/*
+
+
 const myElement = <div className='div_main'>I Love JSX!<div>hahaha!</div></div>; // JSX
 const myElement2 = React.createElement('h1', {}, 'I do not use JSX!');
 const myElement3 = <h1>React is {5 + 5} times better with JSX</h1>;
 const myElement4 = <h1>is it?? : {text}</h1>;
-const myElement5 = <h1>is it?? : {temp_number > 5 ? "o 5" : "u e 5"}</h1>;
 */
+const myElement5 = <h1>is it?? : {temp_number > 5 ? "o 5" : "u e 5"}</h1>;
+
 const myElement6 = <h1 style={{backgroundColor: "red"}}>css color</h1>;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*
@@ -30,7 +31,12 @@ root.render(
 );
 root.render(myElement);
 */
-root.render(myElement6);
+root.render(
+  <>
+  {myElement5}
+  {myElement6}
+  </>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
