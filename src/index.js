@@ -4,6 +4,8 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+/*
 const temp_number = 5;
 let text = "5?";
 if(temp_number > 5){
@@ -11,7 +13,7 @@ if(temp_number > 5){
 } else {
   text = "under or equal 5";
 }
-/*
+  
 const myElement = <div className='div_main'>I Love JSX!<div>hahaha!</div></div>; // JSX
 const myElement2 = React.createElement('h1', {}, 'I do not use JSX!');
 const myElement3 = <h1>React is {5 + 5} times better with JSX</h1>;
