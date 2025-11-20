@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
 import Garage from './Garage';
+import HelloBtn from './HelloBtn';
+import HelloBtn2 from './HelloBtn2';
+import HelloBtn3 from './HelloBtn3';
+import UseStateTest from './UseStateTest';
+import UseStateTest2 from './UseStateTest2';
 
 function App() {
   return (
@@ -14,6 +19,13 @@ function App() {
 
         <Hello name="112233" />
         <Garage />
+
+        <HelloBtn />
+        <HelloBtn2 />
+        <HelloBtn3 />
+        <UseStateTest />
+        <UseStateTest2 />
+        
 
         <a
           className="App-link"
