@@ -7,6 +7,8 @@ import HelloBtn2 from './HelloBtn2';
 import HelloBtn3 from './HelloBtn3';
 import UseStateTest from './UseStateTest';
 import UseStateTest2 from './UseStateTest2';
+import Counter from './components/Counter';
+import SearchBox from './components/SearchBox';
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
         <HelloBtn3 />
         <UseStateTest />
         <UseStateTest2 />
+
+        <Counter />
+
+        <SearchBox />
         
 
         <a

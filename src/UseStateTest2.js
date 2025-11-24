@@ -12,7 +12,7 @@ export default function Color(){
 
     return (
         <>
-            <div class='colorgroup'>
+            <div className='colorgroup'>
                 <h3>Color is {color}</h3>
                 <button type='button' onClick={()=>
                 changeColor('Red')}>Red</button>
