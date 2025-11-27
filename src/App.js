@@ -1,48 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Hello from './Hello';
-import Garage from './Garage';
-import HelloBtn from './HelloBtn';
-import HelloBtn2 from './HelloBtn2';
-import HelloBtn3 from './HelloBtn3';
-import UseStateTest from './UseStateTest';
-import UseStateTest2 from './UseStateTest2';
-import Counter from './components/Counter';
-import SearchBox from './components/SearchBox';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          alert~! <code>src/App.js</code> and save to reload.
-        </p>
-
-        <Hello name="112233" />
-        <Garage />
-
-        <HelloBtn />
-        <HelloBtn2 />
-        <HelloBtn3 />
-        <UseStateTest />
-        <UseStateTest2 />
-
-        <Counter />
-
-        <SearchBox />
-        
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
